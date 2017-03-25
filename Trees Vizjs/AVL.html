@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="input.js"></script>
+	<script type="text/javascript" src="data.json"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.17.0/vis.min.js"></script>
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.17.0/vis.min.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        #mynetwork {
+            width: 600px;
+            height: 400px;
+            border: 1px solid lightgray;
+        }
+    </style>
+
+</head>
+<body>
+
+  <div class="panel-group">
+	<div class="col-sm-6" >
+	<pre>
+	The AVL tree that I have been working on has been serialized to a JSON file. 
+	NOTE: It will take a few minutes if there are many nodes in the AVL tree so please be patient. 
+	NOTE2: If you are viewing AVLTree chances are there are atleast a million nodes. I created two versions
+	-AVL.html and AVLTree.html for benchmarking my 
+	implementation with other implementations. Just saying. </pre>
+		<button type="button" class="btn btn-default" onclick=printGraph();>printAVL</button>
+		<div id="mynetwork"></div>
+	</div>
+  </div>
+
+
+</body>
+</html>
